@@ -245,6 +245,9 @@ footer {
     width: 100%;
     margin-top: 5%;
   }
+  .row .about {
+    width: 95%;
+  }
   .row .container .col {
     font-size: 0.7em;
   }
