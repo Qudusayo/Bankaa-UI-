@@ -3,6 +3,10 @@ $font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
 $dark-color: #363636;
 $light-color: #4a4a4a;
 
+html{
+  width: 100%;
+}
+
 body {
   background-color: #f5faff;
   margin: 0;
@@ -85,7 +89,7 @@ main {
   padding: 20px 3%;
 
   img {
-    width: 40%;
+    width: 45%;
   }
 
   h1 {
@@ -98,9 +102,10 @@ main {
     color: $light-color;
   }
 
-  .content{
-      width: 50%;
-      margin: auto;
+  .content {
+    width: 50%;
+    margin: auto;
+    padding: 0 2%;
   }
 }
 
@@ -118,19 +123,24 @@ main {
     font-family: $font;
   }
 
-  .title{
-      margin: 0;
-      color:  $dark-color;
-      font-weight: 600;
+  .about{
+    width: 48%;
+    font-weight: light;
   }
 
-  .about{
-      margin-bottom: 5%;
+  .title {
+    margin: 0;
+    color: $dark-color;
+    font-weight: 600;
+  }
+
+  .about {
+    margin-bottom: 5%;
   }
 
   .container {
     display: flex;
-    margin: 2% auto;
+    margin: 3% auto;
     width: fit-content;
     position: relative;
     justify-content: center;
@@ -141,8 +151,8 @@ main {
       display: flex;
       font-family: $font;
       padding: 30px 20px 50px 12vw;
-      border-radius: 100px 40px 40px 60px;
-      clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 95%);
+      border-radius: 100px 40px 40px 45px;
+      clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
       font-size: 1.5vw;
     }
 
@@ -176,21 +186,87 @@ footer {
   box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 700px){
-    main, .jumbotron{
-        flex-direction: column;
+@media screen and (max-width: 700px) {
+  main,
+  .jumbotron {
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    width: 85%;
+
+    h1 {
+      font-size: 1.5em;
     }
 
-    .jumbotron{
-        .content{
-            width: 100%;
-        }
+    .content {
+      width: 100%;
+      font-size: 1em;
+    }
+  }
+
+  main {
+    .content{
+      h1{
+        font-size: 10vw;
+      }
     }
 
-    main{
-        img{
-            width: 100%;
-            margin-top: 5%;
-        }
+    img {
+      width: 100%;
+      margin-top: 5%;
     }
+  }
+
+  .row {
+    .container {
+      .col {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    .container {
+      margin: 5% auto;
+
+      .col {
+        max-width: 50%;
+        min-width: 50%;
+        min-height: 20vh;
+        padding: 30px 20px 50px 20vw;
+      }
+
+      img {
+        width: 30%;
+        position: absolute;
+        left: 0%;
+        top: 35%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 425px) {
+  .row {
+    .container {
+      margin: 5% auto;
+
+      .col {
+        max-width: 40%;
+        min-width: 40%;
+        min-height: 20vh;
+        padding: 30px 20px 50px 15vw;
+      }
+
+      img {
+        width: 25%;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+      }
+    }
+  }
 }
