@@ -1,0 +1,227 @@
+body {
+  background-color: #f5faff;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header nav img {
+  width: 80px;
+  height: 50px;
+}
+
+header nav .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .title h2 {
+  display: inline;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0% 2% 5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5% 0;
+}
+
+main .content h1 {
+  font-weight: 600;
+  font-size: 4.5vw;
+  margin: 0;
+  color: #363636;
+}
+
+main .content p {
+  color: #4a4a4a;
+}
+
+main .content .btn-primary {
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  background-color: #008cff;
+  padding: 10px 20px;
+  font-size: medium;
+}
+
+main img {
+  width: 50%;
+}
+
+.jumbotron {
+  background-color: rgba(240, 99, 184, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 12px;
+  padding: 20px 3%;
+}
+
+.jumbotron img {
+  width: 40%;
+}
+
+.jumbotron h1 {
+  margin: 0;
+  font-weight: 600;
+  color: #363636;
+}
+
+.jumbotron p {
+  color: #4a4a4a;
+}
+
+.jumbotron .content {
+  width: 50%;
+  margin: auto;
+}
+
+.row {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.row .title,
+.row .about {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.row .title {
+  margin: 0;
+  color: #363636;
+  font-weight: 600;
+}
+
+.row .about {
+  margin-bottom: 5%;
+}
+
+.row .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row .container .col {
+  max-width: 30%;
+  min-width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 30px 20px 50px 12vw;
+  border-radius: 100px 40px 40px 60px;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 95%);
+          clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 95%);
+  font-size: 1.5vw;
+}
+
+.row .container img {
+  width: 15%;
+  position: absolute;
+  left: 22%;
+  top: 25%;
+}
+
+.row .col1 {
+  background-color: rgba(104, 201, 186, 0.11);
+}
+
+.row .col2 {
+  background-color: rgba(156, 105, 226, 0.11);
+}
+
+.row .col3 {
+  background-color: rgba(240, 99, 184, 0.11);
+}
+
+.row .col4 {
+  background-color: rgba(45, 156, 219, 0.11);
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 700px) {
+  main, .jumbotron {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jumbotron .content {
+    width: 100%;
+  }
+  main img {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
